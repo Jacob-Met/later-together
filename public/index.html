@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Later Together · Lantern Reach</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="brand"><span class="flame" aria-hidden="true"></span><b>Later Together</b><span class="sub">Lantern Reach</span></div>
+  <div class="gauges" id="gauges" aria-live="polite"></div>
+  <nav class="tabs" id="tabs" role="tablist" aria-label="Views">
+    <button role="tab" data-tab="play" id="tab-play">Expedition</button>
+    <button role="tab" data-tab="replay" id="tab-replay">Replay</button>
+  </nav>
+</header>
+<main class="stage">
+  <section class="mapwrap" aria-label="Map of Lantern Reach">
+    <svg id="map" viewBox="0 0 800 500" role="img" aria-label="Lantern Reach map"></svg>
+    <div class="legend" id="legend"></div>
+  </section>
+  <aside class="side" id="side" aria-live="polite"></aside>
+</main>
+<div id="toast" class="toast" role="status" hidden></div>
+<script src="/app.js" type="module"></script>
+</body>
+</html>
